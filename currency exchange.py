@@ -32,13 +32,20 @@ sleep(2)
 # now call function we defined above 
 clear()
 
+def intro():
+      print("\n\t\t\t\t\t\tcurrency exchange \033[01;01;41mv3.1\033[0;01;0m\n\t\t\t\t\t\t A tool by Maynard\n")
+      print("\n\n\n\n\n\n\033[01;01;41m important note:\033[0;01;0m the program may be inaproprate after few weeks or so.\nAs the ammount value in not fixed and my code is not live\n")
+
+
+
 code = "1"  
 while True:
-  print("\n\t\t\t\t\t\tcurrency exchange \033[01;01;41mv3.1\033[0;01;0m\n\t\t\t\t\t\t A tool by Maynard\n")
-  print("\n\033[01;01;41m important note:\033[0;01;0m the program may be inaproprate after few weeks or so.\nAs the ammount value in not fixed and my code is not live\n")
 
-    #getting data from users
+  intro()
+  #getting data from users
   value =float(input("\nEnter the amount :"))
+  clear()
+  intro()
   print ("\n1)INR 2)GBP 3)USD 4)EUR 5)AED")
   currency1 = str(input("\nEnter your current Currency :"))
 
@@ -72,16 +79,17 @@ while True:
       clear()
     
 
-   #easterEgg here when user tries to convert the same currency he has entered
-
+  #easterEgg here when user tries to convert the same currency he has entered
+  clear()
+  intro()
   print ("\n1)INR 2)GBP 3)USD 4)EUR 5)AED")
   currency2 = input("\nEnter the Currency you want to convert to  :")
   print ("\n")
 
   if currency2 == currency1:
       clear()
-      print("it's the same you entered :",h_currency,value)
-
+      intro()
+      print("\nit's the same you entered :",h_currency,value)
       cnfrm = str(input("\n\n\ndo you want to coniniue? enter 'Y' for yes or  press any other key to close : "))
       if cnfrm =='Y' or cnfrm =='y' or cnfrm =='Yes' or cnfrm =='YES' or  cnfrm =='yes':
         clear()
@@ -191,7 +199,8 @@ while True:
       sleep(1)
       clear()
 
-  clear() 
+  clear()
+  intro()
   print("\n",h_currency,round(c_value,2),"\n",c_currency,round(d_value * value,2),"\n\n\n")
 
   cnfrm = str(input("do you want to coniniue? enter 'Y' for yes or press any other key to close : "))
