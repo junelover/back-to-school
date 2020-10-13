@@ -16,7 +16,6 @@ def clear():
 print('\n\033[01;01;41m check \033[0;01;0m')
 clear()
 def load ():
-  a = 0
   for i in range(0,26,1):
     sleep(0.1)
     a = i * 4
