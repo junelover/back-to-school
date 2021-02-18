@@ -66,3 +66,6 @@ def login():
                     print('Login completed')
                     break
     return True
+
+if login() == True:
+    pass        # remove 'pass' and write your code here
